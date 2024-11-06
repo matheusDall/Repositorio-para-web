@@ -1,29 +1,21 @@
 <div align="left">
-  <h1>Buon Giorno, como andas?</h1>
+  <h1>Repositorio responsavel por armazenar códigos e conteudos da disciplina Programaçao para Web</h1>
   
   
-
- 
-
-
-
-
-
-  <h2>Pode me chamar de Dalmaso, e sou um aspirante a programador</h2>
-  <h3>Tenho planos de ingressar na carreira de desenvolvimento de jogos</h3>
-  <h2>Atualmente tenho conhecimento das seguintes linguagens de programação/marcação: </h2>
-
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=matheusDall&locale=pt-br&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dark&hide_border=true&order=2" height="200" alt="languages graph"  />
-  
+  <h2>linguagens utilizadas:</h2>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" alt="html5 logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" alt="css3 logo"  />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="python logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="30" alt="csharp logo"  />
+
+  
+  <h3>Tenho planos de ingressar na carreira de desenvolvimento de jogos</h3>
+  <h2>Atualmente tenho conhecimento das seguintes linguagens de programação/marcação: </h2>
+
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=matheusDall&locale=pt-br&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dark&hide_border=true&order=2" height="200" alt="languages graph"  />
+  
 
  
 
