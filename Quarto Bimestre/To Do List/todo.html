@@ -1,32 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="todo.css">
-<script src="todo.js"></script>
-
-<!-- ideia: usar a ideia de post-it com cores que separam as prioridades -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="todo.css">
+  <title>To-Do List</title>
 </head>
 <body>
-    <div class="interface">
-        <div class="interagir">
-            <input type="button" value="Adicionar" onclick="adicionar()">
 
-        </div>
-
-        <div class="altaPrioridade">
-
-        </div>
-
-        <div class="mediaPrioridade">
-            
-        </div>
-
-        <div class="baixaPrioridade">
-            
-        </div>
+  <div class="interface">
+    <div class="titulo">
+        <h1>TO-DO-LIST</h1>
+        <h3>Lista de afazeres</h3>
     </div>
+    <div class="digitar">
+
+      <input type="text" id="tarefa" placeholder="Tarefa a ser feita:">
+
+      <select id="prioridade">
+
+        <option value="opvz">Selecionar Prioridade: </option>
+        <option value="bx">Baixa Prioridade</option>
+        <option value="alt">Alta Prioridade</option>
+
+      </select>
+      <button id="btAdicionar">Adicionar Tarefa</button>
+    </div>
+
+    <div class="postIt">
+      <div class="MostraTarefa" id="baixaPrio">
+        <h2>Baixa Prioridade</h2>
+        <ul id="tarefasBaixaPrio" class="lista"></ul>
+      </div>
+
+      <div class="MostraTarefa" id="altaPrio">
+
+        <h2>Alta Prioridade</h2>
+        <ul id="tarefasAltaPrio" class="lista"></ul>
+      </div>
+    </div>
+  </div>
+  
+  <script src="todo.js"></script>
+
 </body>
 </html>
