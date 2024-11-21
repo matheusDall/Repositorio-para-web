@@ -8,25 +8,25 @@ document.getElementById("btAdicionar").addEventListener("click", function() {
       return;
     }
     
-    const taskItem = document.createElement("tarefaAdd");
-    taskItem.textContent = tarefa;
+    const tarefaAdd = document.createElement("tarefaAdd");
+    tarefaAdd.textContent = tarefa;
   
-    const deleteButton = document.createElement("button");
-    deleteButton.textContent = "Remover";
+    const concluirTar = document.createElement("button");
+    concluirTar.textContent = "Remover";
 
-    deleteButton.addEventListener("click", function() {
-      taskItem.remove();
+    concluirTar.addEventListener("click", function() {
+      tarefaAdd.remove();
     });
   
-    taskItem.appendChild(deleteButton);
+    tarefaAdd.appendChild(deleteButton);
   
     if (prioridade == "bx") {
-      document.getElementById("tarefasBaixaPrio").appendChild(taskItem);
+      document.getElementById("tarefasBaixaPrio").appendChild(tarefaAdd);
     }
     else if (prioridade == "opvz") {
         alert("Escolha uma prioridade para sua tarefa!!");
     } 
     else {
-      document.getElementById("tarefasAltaPrio").appendChild(taskItem);
+      document.getElementById("tarefasAltaPrio").appendChild(tarefaAdd);
     }
   });
