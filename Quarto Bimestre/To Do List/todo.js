@@ -18,7 +18,7 @@ document.getElementById("btAdicionar").addEventListener("click", function() {
       tarefaAdd.remove();
     });
   
-    tarefaAdd.appendChild(deleteButton);
+    tarefaAdd.appendChild(concluirTar);
   
     if (prioridade == "bx") {
       document.getElementById("tarefasBaixaPrio").appendChild(tarefaAdd);
