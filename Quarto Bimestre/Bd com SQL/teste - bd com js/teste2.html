@@ -1,0 +1,71 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Lista de Tarefas</title>
+</head>
+<body>
+  <div>
+    <input type="text" id="tarefa" placeholder="Nova tarefa">
+    <select id="prioridade">
+      <option value="bx">Baixa</option>
+      <option value="alta">Alta</option>
+      <option value="opvz">Escolha a prioridade</option>
+    </select>
+    <button id="btAdicionar">Adicionar Tarefa</button>
+  </div>
+
+  <div id="tarefasBaixaPrio"></div>
+  <div id="tarefasAltaPrio"></div>
+
+  <script>
+    document.getElementById("btAdicionar").addEventListener("click", function() {
+      const tarefa = document.getElementById("tarefa").value;
+      const prioridade = document.getElementById("prioridade").value;
+
+      if (tarefa == "") {
+        alert("É preciso informar uma tarefa.");
+        return;
+      }
+
+      if (prioridade == "opvz") {
+        alert("Escolha uma prioridade para sua tarefa.");
+        return;
+      }
+
+      const tarefaAdd = document.createElement("div");
+      tarefaAdd.textContent = tarefa;
+
+      const concluirTar = document.createElement("button");
+      concluirTar.textContent = "Remover";
+      concluirTar.addEventListener("click", function() {
+        tarefaAdd.remove();
+      });
+      tarefaAdd.appendChild(concluirTar);
+
+      if (prioridade == "bx") {
+        document.getElementById("tarefasBaixaPrio").appendChild(tarefaAdd);
+      } else {
+        document.getElementById("tarefasAltaPrio").appendChild(tarefaAdd);
+      }
+      
+      fetch('http://localhost:3000/add-tarefa', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ tarefa, prioridade })
+      })
+      .then(response => response.json())  // Agora tratamos a resposta como JSON
+      .then(data => {
+        console.log(data);  // Exibe a resposta JSON (ex: { message: "Dados inseridos com sucesso!" })
+      })
+      .catch(error => console.error('Erro ao adicionar tarefa:', error));
+      
+    });
+  </script>
+</body>
+</html>
