@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="todo.css">
+  <title>To-Do List</title>
+</head>
+<body>
+
+  <div class="interface">
+    <div class="titulo">
+        <h1>TO-DO-LIST</h1>
+        <h3>Lista de afazeres</h3>
+    </div>
+    <div class="digitar">
+
+      <input type="text" id="tarefa" placeholder="Tarefa a ser feita:">
+
+      <select id="prioridade">
+
+        <option value="opvz">Selecionar Prioridade: </option>
+        <option value="bx">Baixa Prioridade</option>
+        <option value="alt">Alta Prioridade</option>
+
+      </select>
+      <button id="btAdicionar">Adicionar Tarefa</button>
+    </div>
+
+    <div class="postIt">
+      <div class="MostraTarefa" id="baixaPrio">
+        <h2>Baixa Prioridade</h2>
+        <ul id="tarefasBaixaPrio" class="lista"></ul>
+      </div>
+
+      <div class="MostraTarefa" id="altaPrio">
+
+        <h2>Alta Prioridade</h2>
+        <ul id="tarefasAltaPrio" class="lista"></ul>
+      </div>
+    </div>
+  </div>
+  
+  <script src="app.js"></script>
+
+</body>
+</html>
