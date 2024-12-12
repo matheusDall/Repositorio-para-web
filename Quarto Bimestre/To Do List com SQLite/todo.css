@@ -58,6 +58,24 @@ input, select, button {
   background-color: #ffe15e;
   color: rgb(255, 30, 0);
 }
+#btRemove {
+  background-color: #e63838;
+  color: rgb(0, 0, 0); 
+  padding: 6px;
+  
+}
+
+#containerDiv {
+  width: 250px;               /* Largura da div */
+  height: 30px;              /* Altura da div */
+  background-color: #f0f0f0;  /* Cor de fundo da div */
+  display: flex;              /* Usando flexbox para facilitar o layout */
+  justify-content: center;    /* Alinhando o botão no centro horizontal */
+  align-items: center;        /* Alinhando o botão no centro vertical */
+  border-radius: 8px;         /* Bordas arredondadas */
+  margin: 20px;               /* Margem externa */
+  border: 2px solid #ccc;     /* Borda da div */
+}
 
 .postIt {
   display: flex;

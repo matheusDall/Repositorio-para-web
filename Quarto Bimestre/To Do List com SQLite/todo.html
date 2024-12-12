@@ -18,11 +18,9 @@
       <input type="text" id="tarefa" placeholder="Tarefa a ser feita:">
 
       <select id="prioridade">
-
         <option value="opvz">Selecionar Prioridade: </option>
         <option value="bx">Baixa Prioridade</option>
         <option value="alt">Alta Prioridade</option>
-
       </select>
       <button id="btAdicionar">Adicionar Tarefa</button>
     </div>
@@ -34,14 +32,15 @@
       </div>
 
       <div class="MostraTarefa" id="altaPrio">
-
         <h2>Alta Prioridade</h2>
         <ul id="tarefasAltaPrio" class="lista"></ul>
       </div>
     </div>
   </div>
-  
-  <script src="app.js"></script>
+
+  <script src="sql.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sql.js@1.6.1/dist/sql-wasm.js"></script>
 
 </body>
 </html>
+
