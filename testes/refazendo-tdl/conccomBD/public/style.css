@@ -1,0 +1,175 @@
+    /* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho e imagem */
+header {
+    text-align: left;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 110px;
+}
+
+header img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+/* Formulário de adicionar tarefa */
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select {
+    width: 20%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Lista de tarefas */
+.todo-list h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.priority-alta {
+    border-left: 5px solid red;
+}
+
+.priority-media {
+    border-left: 5px solid orange;
+}
+
+.priority-baixa {
+    border-left: 5px solid green;
+}
+
+button.edit, button.cancel, button.complete {
+    margin-left: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.edit {
+    background-color: #FFA500;
+}
+
+button.edit:hover {
+    background-color: #FF8C00;
+}
+
+button.cancel {
+    background-color: #f44336;
+}
+
+button.cancel:hover {
+    background-color: #d32f2f;
+}
+
+button.complete {
+    background-color: #4CAF50;
+}
+
+button.complete:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 450px;
+    font-size: 14px;
+}
+
+/* Estilo para tarefa completa */
+li.completa {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* Botão de completar tarefa */
+button.complete {
+    background-color: #4CAF50;
+}
+
+button.complete:hover {
+    background-color: #45a049;
+}
+
+/* Botão de remover tarefa */
+button.cancel {
+    background-color: #f44336;
+}
+
+button.cancel:hover {
+    background-color: #d32f2f;
+}
+
+/* Desabilitar botões quando a tarefa for completada */
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
