@@ -1,0 +1,12 @@
+body{
+margin: 0;
+padding: 0;
+background-color:rgba(0, 45, 248, 0.171);
+align-items: center;
+}
+
+.f1{
+    color: rgb(0, 253, 34);
+}
+
+.f2{color: red;}
