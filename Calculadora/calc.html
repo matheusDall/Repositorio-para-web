@@ -8,33 +8,54 @@
 </head>
 <body>
 
-    <div class="numeros">
+    <section class="numeros">
+
+        <div class="AbreParenteses">
+            <input type="button" onclick="calcular('(')" value="(" id="AbreP">
+        </div>
+
         <div class="linha1">
-            <input type="button" value="1" id="n1">
-            <input type="button" value="2" id="n2">
-            <input type="button" value="3" id="n3">
-        
+
+            <input type="button" onclick="calcular('*')" value="*" id="mult">
+            <input type="button" onclick="calcular('1')" value="1" id="n1">
+            <input type="button" onclick="calcular('2')" value="2" id="n2">
+            <input type="button" onclick="calcular('3')" value="3" id="n3">
+            
+        </div>
+
+        <div class="FechaParenteses" >
+            <input type="button" onclick="calcular('+')" value="+" id="soma" style=" height: 5vh">
         </div>
 
         <div class="linha2">
-            <input type="button" value="4" id="n4">
-            <input type="button" value="5" id="n5">
-            <input type="button" value="6" id="n6">
+            <input type="button" onclick="calcular('/')" value="/" id="divs">
+            <input type="button" onclick="calcular('4')"value="4" id="n4">
+            <input type="button" onclick="calcular('5')" value="5" id="n5">
+            <input type="button" onclick="calcular('6')" value="6" id="n6">
         
         </div>
 
+        <div class="FechaParenteses" >
+            <input type="button" onclick="calcular('(')" value="(" id="AbreP" style=" height: 5vh">
+        </div>
+
         <div class="linha3">
-            <input type="button" value="7" id="n7">
-            <input type="button" value="8" id="n8">
-            <input type="button" value="9" id="n9">
+           
+            <input type="button" onclick="calcular('enter')" value="=" id="resolver">
+            <input type="button" onclick="calcular('7')" value="7" id="n7">
+            <input type="button" onclick="calcular('8')" value="8" id="n8">
+            <input type="button" onclick="calcular('9')" value="9" id="n9">
+            <input type="button" onclick="calcular('-')" value="-" id="sub">
         
         </div>
 
         <div class="linha4">
-            <input type="button" value="0" id="n0">
-            <input type="button" value="." id="ponto">
+            <input type="button" onclick="calcular('0')" value="0" id="n0" width="5vh">
+            <input type="button" onclick="calcular('.')" value="." id="ponto">
+            
         </div>
-    </div>
+    
+    </section>
     
     <script src="calc.js"></script>
 </body>

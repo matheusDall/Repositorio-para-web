@@ -1,9 +1,14 @@
 *{
     margin: 0;
-    padding: 0;
 }
 
 .numeros{
+
     background-color: rgb(235, 213, 184);
-   
+
+    display: block;
+    
+
+
 }
+
