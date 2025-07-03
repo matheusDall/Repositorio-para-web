@@ -1,0 +1,96 @@
+
+body{
+
+    background: linear-gradient(0.55turn, #3f87a6, #ebf8e1, #f69d3c);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+}
+
+.fundo{
+    
+    background-color: rgb(255, 239, 209);
+    border-right: 10px solid #000000;
+    border-left: 10px solid #000000;
+    border-bottom: 7px solid #000000;
+    border-top: 2px solid #000000;
+    border-radius: 7px; 
+}
+
+#tela{
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    outline: none;
+    margin: 5px;
+
+    height: 20px;   
+    font-size: 1.5rem;
+    text-align: right;
+    padding: 8px;
+
+    border-radius: 8px;
+    background: rgb(161, 149, 125);
+    border-top: 1px solid rgb(185, 158, 108);
+    border-bottom: 1px solid rgb(185, 158, 108);
+    border-right: 8px solid rgb(185, 158, 108);
+    border-left: 8px solid rgb(185, 158, 108);
+}
+
+.calculadora {
+    display: flex;
+    gap: 10px;
+    background: #000000;
+    padding: 20px;
+    border: 2px solid rgb(255, 239, 209);
+    border-top: 1px solid #000000;
+}
+
+.col-esquerda, .col-direita{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.col-centro {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.linha {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="button"] {
+    width: 50px;
+    height: 50px;
+
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+
+    background: #3f3f3f;
+    color: #ffffff;
+    
+}
+
+input[type="button"]:hover {
+    background: #5c5c5c;
+    color: #d8d8d8;
+}
+
+input.zero {
+    width: 110px;
+}
+
+.col-direita input[type="button"] {
+    width: 50px;
+    height: 50px;
+}

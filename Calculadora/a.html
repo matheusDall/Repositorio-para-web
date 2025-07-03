@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="a.css" />
+  <title>Calculadora</title>
+</head>
+<body>
+    <div class="fundo">
+
+        <div class="display">
+            <input type="text" id="tela" readonly>
+        </div>
+
+        <section class="calculadora">
+            <div class="col-esquerda">
+                <input type="button" onclick="calcular('(')" value="(">
+                <input type="button" onclick="calcular(')')" value=")">
+                <input type="button" onclick="calcular('*')" value="*">
+                <input type="button" onclick="calcular('/')" value="/">
+            </div>
+
+            <div class="col-centro">
+                <div class="linha">
+                    <input type="button" onclick="calcular('1')" value="1">
+                    <input type="button" onclick="calcular('2')" value="2">
+                    <input type="button" onclick="calcular('3')" value="3">
+                </div>
+                
+                <div class="linha">
+                    <input type="button" onclick="calcular('4')" value="4">
+                    <input type="button" onclick="calcular('5')" value="5">
+                    <input type="button" onclick="calcular('6')" value="6">
+                </div>
+                <div class="linha">
+                    <input type="button" onclick="calcular('7')" value="7">
+                    <input type="button" onclick="calcular('8')" value="8">
+                    <input type="button" onclick="calcular('9')" value="9">
+                </div>
+
+                <div class="linha">
+                    <input type="button" onclick="calcular('0')" value="0" class="zero">
+                    <input type="button" onclick="calcular('.')" value=".">
+                </div>
+
+            </div>
+
+            <div class="col-direita">
+                <input type="button" onclick="calcular('+')" value="+">
+                <input type="button" onclick="calcular('-')" value="-">
+                <input type="button" onclick="apagar()" value="A">
+                <input type="button" onclick="calcular('=')" value="=">
+            </div>
+        </section>
+    </div>
+  
+  <script src="a.js"></script>
+</body>
+</html>
