@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora com desconto</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Calculadora com desconto</h2>
+        <input type="number" id="preco" placeholder="Digite o preço">
+        <button onclick="mostrarDesconto10(preco)">Aplicar 10%</button>
+        <button onclick="mostrarDesconto25">Aplicar 25%</button>
+
+    </div>
+
+    <p id="resultado"></p>
+
+</body>
+</html>
+
+<script>
+
+    function calcularDesconto(valorOriginal, percentual){
+        let desconto = valorOriginal * (percentual / 100)
+        let valorFinal = valorOriginal - desconto
+
+        return valorFinal
+    }
+    function mostrarDesconto10(){
+
+        let preco = parseFloat(document.getElementById("preco").value)
+
+        if(isNaN(preco) || preco <= 0){
+            document.getElementById("resultado").innerText = preco + " não é um valor valido"
+        }
+
+        else{
+            document.getElementById("resultado").innerText = calcularDesconto(preco , 10)
+        }
+    }
+
+</script>
