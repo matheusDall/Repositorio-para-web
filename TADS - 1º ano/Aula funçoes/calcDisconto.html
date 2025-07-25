@@ -11,7 +11,7 @@
         <h2>Calculadora com desconto</h2>
         <input type="number" id="preco" placeholder="Digite o preço">
         <button onclick="mostrarDesconto10(preco)">Aplicar 10%</button>
-        <button onclick="mostrarDesconto25">Aplicar 25%</button>
+        <button onclick="mostrarDesconto25(preco)">Aplicar 25%</button>
 
     </div>
 
@@ -31,14 +31,26 @@
     function mostrarDesconto10(){
 
         let preco = parseFloat(document.getElementById("preco").value)
+        let novoValor = calcularDesconto(preco , 10)
 
         if(isNaN(preco) || preco <= 0){
             document.getElementById("resultado").innerText = preco + " não é um valor valido"
         }
-
         else{
-            document.getElementById("resultado").innerText = calcularDesconto(preco , 10)
+            document.getElementById("resultado").innerText = `Novo valor com 10% de desconto: ${novoValor.toFixed(2)}`
         }
     }
 
+    function mostrarDesconto25(){
+
+        let preco = parseFloat(document.getElementById("preco").value)
+        let novoValor = calcularDesconto(preco , 25)
+
+        if(isNaN(preco) || preco <= 0){
+            document.getElementById("resultado").innerText = preco + " não é um valor valido"
+        }
+        else{
+            document.getElementById("resultado").innerText = `Novo valor com 25% de desconto: ${novoValor.toFixed(2)}`
+        }
+    }
 </script>
