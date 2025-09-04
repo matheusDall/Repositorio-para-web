@@ -59,10 +59,9 @@ function montarJogos(){
 
     outLista.textContent = jogos;
 
-    // inicio = clubes.slice(0, clubes.length/2)
+    // inicio = clubes.slice(0, clubes.length/2)     --pegar primeira metade de um vetor
 
-    // fim = clubes.slice(clubes.length/2, clubes.length)
-
+    // fim = clubes.slice(clubes.length/2, clubes.length)    ----pegar a segunda metade
 
 }
 
